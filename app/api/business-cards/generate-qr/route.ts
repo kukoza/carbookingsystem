@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from "next/server"
 import { cookies } from "next/headers"
 import { verify } from "jsonwebtoken"
 import { executeQuerySingle } from "@/lib/db"
-import QRCode from "qrcode"
+import QRCode from "qrcode.react"
 
 export async function GET(request: NextRequest) {
   try {
